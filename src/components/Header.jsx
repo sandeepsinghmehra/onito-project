@@ -6,10 +6,10 @@ export function Header() {
         <nav className='nav'>
             <ul>
                 <li>
-                    <NavLink to="/" activeClassName="active">Home</NavLink>
+                    <NavLink to="/" activeclassname="active">Home</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/create" activeClassName="active">Create</NavLink>
+                    <NavLink to="/create" activeclassname="active">Create</NavLink>
                 </li>
             </ul>
         </nav>

@@ -39,7 +39,7 @@ const customStyles = {
         padding: '0px',
     }),
 };
-export function Dropdown({options, placeholder, defaultValue, name, ...rest}){
+export const Dropdown =  React.forwardRef(({options, placeholder, defaultValue, name, ...rest}, ref) =>{
   return (
     <>
         <Select
@@ -49,7 +49,8 @@ export function Dropdown({options, placeholder, defaultValue, name, ...rest}){
             styles={customStyles}
             placeholder={placeholder}
             {...rest}
+            ref={ref}
         />
     </>
   )
-}
+});
