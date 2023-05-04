@@ -1,0 +1,176 @@
+.App {
+  font-size: calc(10px + 2vmin);
+  width: 100%;
+  padding: 10px;
+}
+.App-heading{
+  text-align: center;
+  font-size: calc(24px + 2vmin);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.govt_col{
+  grid-column-end: span 2;
+}
+.detail-container{
+  padding: 5px 0;
+}
+label {
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+}
+.age_container{
+  width: 100%;
+  display: flex;
+}
+.dateOrAge{
+  width: 30%;
+}
+sup {
+  color: red;
+}
+input {
+  font-size: 10px;
+  font-weight: 300;
+}
+input[type="text"],
+input[type="email"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #333;
+  height: 32px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-color: #0077ff;
+}
+.col_sex_container{
+  display: flex;
+  flex-direction: row;
+}
+.col_id_type_container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.sex {
+  width: 50%;
+}
+
+.id_type {
+  width: 20%;
+}
+.guardian_label {
+  width: 40%;
+}
+.col_id_type_container label{
+  width: 20%;
+}
+.govt_id {
+  width: 50%;
+}
+.emergency_contact_number{
+  display: flex;
+  flex-direction: row;
+}
+.emergency_contact_number label{
+  width: 40%;
+}
+.emergency_contact_number input{
+  width: 60%;
+}
+.col_other_container{
+  display: flex;
+  flex-direction: row;
+}
+.validation-error{
+  font-size: 10px;
+  color: red;
+  text-align: left;
+}
+.buttons{
+  text-align: right;
+}
+button{
+  width: 100px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 10px 20px;
+}
+.cancel-btn{
+  color: red;
+  border: 1px solid red;
+  background-color: white;
+}
+.submit-btn{
+  color: white;
+  border: 1px solid green;
+  background-color: green;
+}
+button span{
+  font-size: 10px;
+  text-decoration: underline;
+}
+.pr{
+  padding-right: 10px;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .govt_col{
+    grid-column-end: auto;
+  }
+  .col {
+    width: 100%;
+  }
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+  }
+  .age_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .col_sex_container{
+    flex-direction: column;
+  }
+  .col_other_container{
+    flex-direction: column;
+  }
+  .dateOrAge{
+    width: 100%;
+  }
+  .govt_label{
+    width: 100%;
+  }
+  .sex {
+    width: 100% !important;
+  }
+  .id_type {
+    width: 100% !important;
+  }
+  .emergency_contact_number{
+    flex-direction: column;
+  }
+  .emergency_contact_number label{
+    width: 100%;
+  }
+  .emergency_contact_number input{
+    width: 100%;
+  }
+  label {
+    display: block;
+  }
+  .buttons{
+    text-align: center;
+  }
+  button{
+    width: 100%;
+    margin: 10px 0;
+  }
+}
