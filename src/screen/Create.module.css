@@ -1,0 +1,198 @@
+.form_wrapper{
+    width: 98%;
+    margin: auto;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 28px 0px rgba(92,92,88,0.3); 
+    box-shadow: 0px 0px 28px 0px rgba(92,92,88,0.3);
+}
+.personal_wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 36px 1fr;
+    grid-template-areas:
+      "header header header"
+      "personalInputField1 personalInputField2 personalInputField3"
+      "personalInputField4 personalInputField5 personalInputField5";
+    grid-gap: 10px;
+}
+.form_heading{
+    grid-area: header;
+    color: black;
+    text-align: left;
+    font-size: calc(14px + 2vmin);
+    font-weight: 500;
+    text-decoration: underline;
+}
+.personal_col1{
+   grid-area: personalInputField1;
+}
+.personal_col2{
+    grid-area: personalInputField2;
+}
+.personal_col3{
+    grid-area: personalInputField3;
+}
+.personal_col4{
+    grid-area: personalInputField4;
+}
+.personal_col5{
+    grid-area: personalInputField5;
+}
+.govtWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.govtInputWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: '32px',
+}
+.contact_wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 36px 1fr;
+    grid-template-areas:
+      "header header header"
+      "contactInputField1 contactInputField2 contactInputField3";
+    grid-gap: 10px;
+}
+.contact_col1{
+    grid-area: contactInputField1;
+}
+.contact_col2{
+    grid-area: contactInputField2;
+}
+.contact_col3{
+    grid-area: contactInputField3;
+}
+.address_wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 36px 1fr;
+    grid-template-areas:
+      "header header header"
+      "addressInputField1 addressInputField2 addressInputField3"
+      "addressInputField4  addressInputField5 addressInputField5";
+    grid-gap: 10px;
+}
+.address_col1{
+    grid-area: addressInputField1;
+}
+.address_col2{
+    grid-area: addressInputField2;
+}
+.address_col3{
+    grid-area: addressInputField3;
+}
+.address_col4{
+    grid-area: addressInputField4;
+}
+.address_col5{
+    grid-area: addressInputField5;
+}
+.addressInput label{
+    width: 10%;
+}
+.addressInput{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.other_wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 36px 1fr;
+    grid-template-areas:
+      "header header header header"
+      "otherInputField1 otherInputField2 otherInputField3 otherInputField4"
+      "otherInputField5 otherInputField5 otherInputField5 otherInputField5";
+    grid-gap: 10px;
+}
+.other_col1{
+    grid-area: otherInputField1;
+}
+.other_col2{
+    grid-area: otherInputField2;
+}
+.other_col3{
+    grid-area: otherInputField3;
+}
+.other_col4{
+    grid-area: otherInputField4;
+}
+.other_col5{
+    grid-area: otherInputField5;
+}
+@media only screen and (max-width: 1024px) {
+    /* For tablet: */
+    .wrapper {
+      grid-template-columns: 1fr auto;
+    }
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .form_wrapper{
+        padding: 10px;
+    }
+    .personal_wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "header"
+            "personalInputField1" 
+            "personalInputField2" 
+            "personalInputField3"
+            "personalInputField4" 
+            "personalInputField5";
+    }
+    .govtWrapper{
+        flex-direction: column;
+    }
+    .govtInputWrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: fit-content,
+    }
+    .contact_wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "header"
+            "contactInputField1" 
+            "contactInputField2"
+            "contactInputField3";
+    }
+    .address_wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "header"
+            "addressInputField1" 
+            "addressInputField2"
+            "addressInputField3"
+            "addressInputField4"
+            "addressInputField5";
+    }
+    .addressInput{
+        flex-direction: column;
+    }
+    .other_wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "header"
+            "otherInputField1"
+            "otherInputField2" 
+            "otherInputField3"
+            "otherInputField4"
+            "otherInputField5";
+    }
+}
