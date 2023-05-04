@@ -106,7 +106,7 @@ export function Create() {
         // console.log("onSubmit data: ",data);
         try {
             setLoading(true);
-            const result = await axios.post('http://localhost:8000/create', data);
+            const result = await axios.post(`${process.env.REACT_APP_BASE_API_URL}/create`, data);
             setLoading(false);
             navigate('/');  
         } catch (error) {

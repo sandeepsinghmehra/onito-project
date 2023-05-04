@@ -10,7 +10,7 @@ export function Home() {
         async function fetchData() {
             try {
                 setLoading(true);
-                const result = await axios.get('http://localhost:8000');
+                const result = await axios.get(`${process.env.REACT_APP_BASE_API_URL}`);
                 setData(result.data.response);
                 setLoading(false);
             } catch (error) {
