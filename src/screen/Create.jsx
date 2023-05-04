@@ -108,7 +108,9 @@ export function Create() {
             setLoading(true);
             const result = await axios.post(`${process.env.REACT_APP_BASE_API_URL}/create`, data);
             setLoading(false);
-            navigate('/');  
+            if(result.status === 201){
+                navigate(-1);
+            }
         } catch (error) {
             console.error(error);
             setLoading(false);
